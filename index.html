@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vacation Survey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <header>
+            <h1 id="title">Beach Vacation Survey</h1>
+            <p id="description"><em>Tell us about your stay on the islands.</em></p>
+          </header>
+          <div class="form-container">
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Please type your name." required />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Please type your email." required />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Room Number (Optional)</label>
+                <input id="number" type="number" name="number" min="1" max="599" placeholder="Please enter your room number.">
+              </div>
+              <div class="form-group">
+                <label for="purpose">What was the purpose of your vacation?</label>
+                <select id="dropdown" name="purpose" required>
+                  <option disabled selected value>Select your purpose...</option>
+                  <option value="business">Business Trip</option>
+                  <option value="adventure">Seeking Adventure</option>
+                  <option value="family">Visiting Family</option>
+                  <option value="spiritual">Spiritual Reasons</option>
+                  <option value="noanswer">Prefer not to say</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="recommendation">Would you recommend us to your friends?</label>
+                <label class="label-radio"><input class="input-radio" type="radio" name="recommendation" value="Yes" checked />Yes</label>
+                <label class="label-radio"><input class="input-radio" type="radio" name="recommendation" value="Maybe" />Maybe</label>
+                <label class="label-radio"><input class="input-radio" type="radio" name="recommendation" value="No" />No</label>
+              </div>
+              <div class="form-group">
+                <label for="likes">What did you enjoy the most? <span class="extra">(Check all that apply)</span></label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Scenery">Scenery</label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Service">Service</label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Cleanliness">Cleanliness</label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Events">Events and activities</label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Food">Food</label>
+                <label class="label-checkbox"><input class="input-checkbox" type="checkbox" name="likes" value="Tour">Tour of the islands</label>
+              </div>
+              <div class="form-group text">
+                <label for="comments">Any questions, comments, or concerns?</label>
+                <textarea id="comments" class="comments" name="comments" placeholder="Type your comments here..."></textarea>
+              </div>
+              <div class="form-group">
+                <button id="submit" type="submit" name="submit-button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+  </body>
+</html>

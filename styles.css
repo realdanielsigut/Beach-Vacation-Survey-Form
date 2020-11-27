@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+body {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1544955175-1fb49cf83123?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+header {
+  color: white;
+  text-align: center;
+  margin-top: 1.75rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-top: 0.75em;
+  font-weight: lighter;
+}
+
+form {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 550px;
+  font-size: 1.25em;
+  padding: 1em 2em;
+  background-color:rgba(255, 163, 114, 0.95);
+  opacity: .99;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+label {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0;
+  margin-bottom: 7.5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 1em;
+  margin-top: 0;
+  font-family: inherit;
+  font-size: 0.75em;
+  border-radius: 3px;
+  border: 1px solid #ffa372;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  border: 1px solid #ffa372;
+  box-shadow: 0 0 5px white;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+span {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  resize:vertical;
+  min-height: 220px;
+  font-family: inherit;
+  font-size: initial;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ffa372;
+}
+
+button {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid green;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.form-container {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.form-group {
+  margin-top: 1em;
+  margin-bottom: 30px;
+}
+
+.label-radio,
+.label-checkbox {
+  padding: 0;
+}
+
+.input-radio,
+.input-checkbox {
+  width: auto;
+  min-height: 1rem;
+  min-width: 1rem;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  label {
+    margin-bottom: 1rem;
+  }
+
+  .extra {
+    display: none;
+  }
+}
